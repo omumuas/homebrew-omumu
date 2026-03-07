@@ -1,13 +1,13 @@
 class Omumu < Formula
   desc "CLI for the Omumu customer education platform"
   homepage "https://github.com/omumuas/omumu-cli"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/omumuas/omumu-cli/releases/download/v0.2.1/omumu-0.2.1-darwin-arm64.tar.gz"
-      sha256 "4f08ebdac3fc4bcdf69b5ddb0f2e5a0aa3a23149816e0b0279e958ff4ee79943"
+      url "https://github.com/omumuas/omumu-cli/releases/download/v0.2.2/omumu-0.2.2-darwin-arm64.tar.gz"
+      sha256 "ff07da33c341bb6d5cdb6264302f2ebcec7120a141e3dec94c75ae02acdb034d"
     end
   end
 
@@ -16,6 +16,6 @@ class Omumu < Formula
   end
 
   test do
-    assert_match "omumu 0.2.1", shell_output("#{bin}/omumu --version")
+    assert_match "omumu 0.2.2", shell_output("#{bin}/omumu --version")
   end
 end
