@@ -1,24 +1,24 @@
 class Omumu < Formula
   desc "CLI for the Omumu customer education platform"
   homepage "https://github.com/omumuas/omumu-cli"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/omumuas/omumu-cli/releases/download/v0.2.3/omumu-0.2.3-darwin-arm64.tar.gz"
-      sha256 "9b8e2e625d206e8045fd91a08589f97ab1b58f74a7401478e38a77f10d48b814"
+      url "https://github.com/omumuas/omumu-cli/releases/download/v0.2.4/omumu-0.2.4-darwin-arm64.tar.gz"
+      sha256 "c208a283a0f847452fbb94b888b5acf4a53875235cf0a791435b5d60bf75a9d6"
     end
 
     on_intel do
-      url "https://github.com/omumuas/omumu-cli/releases/download/v0.2.3/omumu-0.2.3-uber.jar"
+      url "https://github.com/omumuas/omumu-cli/releases/download/v0.2.4/omumu-0.2.4-uber.jar"
       sha256 :no_check
       depends_on "openjdk@21"
     end
   end
 
   on_linux do
-    url "https://github.com/omumuas/omumu-cli/releases/download/v0.2.3/omumu-0.2.3-uber.jar"
+    url "https://github.com/omumuas/omumu-cli/releases/download/v0.2.4/omumu-0.2.4-uber.jar"
     sha256 :no_check
     depends_on "openjdk@21"
   end
