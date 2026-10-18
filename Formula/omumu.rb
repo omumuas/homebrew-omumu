@@ -35,6 +35,17 @@ class Omumu < Formula
     end
   end
 
+  def caveats
+    return if !OS.mac? || !Hardware::CPU.arm?
+
+    <<~EOS
+      Homebrew runs its Xcode checks for this formula even though nothing is
+      compiled. On Apple Silicon the cask avoids that entirely:
+        brew uninstall omumu
+        brew install --cask omumuas/omumu/omumu
+    EOS
+  end
+
   test do
     assert_match "omumu", shell_output("#{bin}/omumu --version")
   end
